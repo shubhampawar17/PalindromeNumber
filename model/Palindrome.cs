@@ -8,17 +8,17 @@ namespace PalindromeNumber.model
 {
     internal class Palindrome
     {
-        public static bool IsPalindrome(int num)
+        public static bool IsPalindrome(int number)
         {
-            int rev = 0, temp = num;
+            int reverse = 0, temp = number;
 
-            while (num > 0)
+            while (number > 0)
             {
-                int rem = num % 10;
-                rev = (rev * 10) + rem;
-                num /= 10;
+                int remainder = number % 10;
+                reverse = (reverse * 10) + remainder;
+                number = number / 10;
             }
-            return temp == rev;
+            return temp == reverse;
         }
     }
 }

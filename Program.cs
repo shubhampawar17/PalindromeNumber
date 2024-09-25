@@ -15,18 +15,18 @@ namespace PalindromeNumber
 
             while (!exit){
                 Console.WriteLine("Enter a Number:");
-                int num;
+                int number;
 
                 while (true){
-                    num = Convert.ToInt32(Console.ReadLine());
-                    if (num < 0){
+                    number = Convert.ToInt32(Console.ReadLine());
+                    if (number < 0){
                         Console.WriteLine("Please enter a positive number:");
                         continue; 
                     }
                     break; 
                 }
 
-                string result = Palindrome.IsPalindrome(num) ? "Palindrome Number" : "Not a Palindrome Number";
+                string result = Palindrome.IsPalindrome(number) ? "Palindrome Number" : "Not a Palindrome Number";
                 Console.WriteLine(result);
 
                 Console.WriteLine("\nChoose an option:");
